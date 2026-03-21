@@ -1,0 +1,51 @@
+Query,Baseline_Prec,Proposed_Prec,Baseline_AGS,Proposed_AGS,Delta_Prec
+Explain the role of gluon-gluon subprocesses in the calculation of prompt diphoton production at LHC energies.,0.55,1.0,0.7926200845179757,0.6451612903225806,0.44999999999999996
+What specific family of graphs is characterized by the -pebble game with colors algorithm?,0.55,1.0,0.8911127436459741,0.8333333333333334,0.44999999999999996
+"According to the dark matter field fluid model, what is the primary cause for the evolution of the Earth-Moon system?",0.55,1.0,0.45409476386231784,0.5364162480891025,0.44999999999999996
+How does the Stirling cycle number determinant relate to unlabeled acyclic single-source automata?,0.55,1.0,0.9180630266487178,2.0833333333333335,0.44999999999999996
+Contrast the behavior of single-channel and two-channel Kondo lattice models at half-filling.,0.55,0.7,0.9216873445443351,0.7681775352694896,0.1499999999999999
+Describe the symmetry breaking phase transition observed in two-channel Kondo models as coupling strength increases.,0.55,1.0,0.9087509045415363,0.5586592178770949,0.44999999999999996
+What evidence is used to demonstrate that kinetic models of interacting populations explain biodiversity?,0.55,0.6666666666666666,0.5852367007475056,0.4617136110642604,0.11666666666666659
+Has the dark matter field fluid model for the Earth-Moon system been independently verified by astronomical data?,0.55,1.0,0.552618141315964,0.5317125221844884,0.44999999999999996
+Compare the sensitivity to Higgs boson signals versus QCD background processes in diphoton production.,0.55,0.6666666666666666,0.5257156765553969,0.5367200133831485,0.11666666666666659
+Summarize the main algorithmic solutions provided for tree decompositions of graphs using colored pebbles.,0.55,1.0,0.49163466208920753,0.5924630924630925,0.44999999999999996
+What are the implications of the exact diagonalization method for low-temperature calculations in lattice models?,0.55,0.875,0.8811741135365228,0.6841603891562389,0.32499999999999996
+Explain the methodology used to contrast diphoton pairs from Higgs decay with those from QCD processes.,0.55,1.0,0.6370362641505156,0.6493506493506493,0.44999999999999996
+What is the average dark matter field fluid constant derived from Earth-Moon system observations?,0.55,1.0,0.530936049935488,0.625,0.44999999999999996
+How does the dyadic grid facilitate the computation of the norm in Hardy spaces?,0.55,1.0,1.2791909208505134,1.0365377947295424,0.44999999999999996
+"In the context of the Stirling cycle numbers research, describe the bijection used in the proof for counting automata.",0.55,0.9,1.1349722937597706,0.6278490683649895,0.35
+What is the closest distance the Moon reached from Earth according to the dark matter field fluid model 4.5 billion years ago?,0.55,1.0,0.4228009836830576,0.625,0.44999999999999996
+Does the -pebble game with colors provide a new proof for the Tutte-Nash-Williams characterization of arboricity?,0.55,1.0,1.4300344158591582,0.8333333333333334,0.44999999999999996
+Explain the 'sign-reversing involution' mentioned in the context of acyclic single-source automata.,0.55,1.0,1.4623457393912718,2.0833333333333335,0.44999999999999996
+What perturbative contributions are included in the NLO calculation for massive photon pairs?,0.55,1.0,0.7406033120318833,0.9022556390977443,0.44999999999999996
+Identify the angular acceleration rate predicted for Mars's rotation slowing in the dark matter model.,0.55,1.0,0.5103427369433023,0.625,0.44999999999999996
+How does the dark matter field fluid model align with geological and fossil evidence of the Earth-Moon system?,0.55,1.0,0.5899084603165201,0.625,0.44999999999999996
+Define -sparse graphs and explain how they are identified using colored pebbles.,0.55,1.0,1.0157001301579616,0.8991981672394044,0.44999999999999996
+What is the significance of 'initial-state gluon radiation' in diphoton production cross-sections?,0.55,0.75,0.7454831265006369,0.5952380952380952,0.19999999999999996
+Explain the relationship between Hardy spaces and special atoms as described in the dyadic grid paper.,0.55,1.0,1.3132810229584424,1.7876344086021505,0.44999999999999996
+Describe the connection between pebble game algorithms and the work of Gabow and Westermann.,0.55,1.0,0.5463016233372031,0.8333333333333334,0.44999999999999996
+What happens to the rotation of Mars according to the American Physical Society meeting report from 2004?,0.55,1.0,0.6757203907203907,0.625,0.44999999999999996
+How does the 'all-orders resummation' improve the accuracy of prompt diphoton calculations?,0.55,0.6666666666666666,0.8078755029974541,0.6648113790970933,0.11666666666666659
+"Are -sparse graphs relevant to rigidity theory, and if so, how?",0.55,0.8,0.915269628178787,0.9262048192771085,0.25
+What is the relationship between the dyadic grid and numerical analysis accuracy?,0.55,1.0,0.6601563320403224,0.3875968992248062,0.44999999999999996
+Explain the concept of 'marked lattice paths' in the proof of Stirling cycle number determinants.,0.55,1.0,1.0184165686199436,0.37174721189591076,0.44999999999999996
+Does the Kondo lattice model study account for localized spins interacting antiferromagnetically?,0.55,1.0,0.8572240168812255,0.7302042269768187,0.44999999999999996
+What specific data from the Fermilab Tevatron was used to demonstrate agreement with the QCD calculations?,0.55,1.0,0.9187925665802139,0.7873376623376624,0.44999999999999996
+How does the dark matter field fluid constant affect the calculation of tidal friction?,0.55,0.75,0.4961813481844877,0.5580237374712939,0.19999999999999996
+"Can the -pebble game with colors be applied to dense graphs, or is it strictly for sparse graphs?",0.55,0.6666666666666666,1.014994169029213,0.40956695886273353,0.11666666666666659
+Explain the importance of 'next-to-next-to-leading logarithmic accuracy' in perturbative QCD.,0.55,0.8333333333333334,0.6557197249240271,0.6533831465338314,0.2833333333333333
+What are the specific health benefits of drinking coffee daily according to recent medical literature?,0.55,0.0,0.4287319204399064,0.0,-0.55
+How does quantum computing impact traditional RSA encryption methods?,0.55,1.0,0.5920915262468126,0.5674821531599025,0.44999999999999996
+What is the primary contribution of the Transformer architecture to natural language processing?,0.55,1.0,0.6547501172438475,0.6445863040955065,0.44999999999999996
+Explain the socio-economic causes of urban sprawl in developing nations.,0.55,0.75,0.5785018910628668,0.44765419765419767,0.19999999999999996
+How do neural networks use backpropagation to minimize loss during training?,0.55,0.875,0.5184659159039835,0.49415142929212935,0.32499999999999996
+Describe the effects of ocean acidification on coral reef biodiversity.,0.55,0.8571428571428571,0.5121249496769255,0.4849152451020023,0.30714285714285705
+What are the ethical implications of using CRISPR gene editing in human embryos?,0.55,1.0,0.7731346662178489,0.43949345673483603,0.44999999999999996
+Summarize the key findings of a research paper regarding the impact of microplastics on marine food chains.,0.55,0.8,0.4682821005326945,0.5714285714285714,0.25
+How does the theory of general relativity explain the phenomenon of gravitational lensing?,0.55,1.0,0.6758133812148577,0.5317856660817923,0.44999999999999996
+What are the current limitations of solid-state battery technology for electric vehicles?,0.55,1.0,0.6650143252466474,0.5586592178770949,0.44999999999999996
+Explain the role of mitochondria in cellular respiration and energy production.,0.55,0.75,0.5660316006805741,0.5124316473000684,0.19999999999999996
+What was the impact of the Industrial Revolution on global carbon emission trends?,0.55,1.0,0.48814218111802843,0.423728813559322,0.44999999999999996
+How do large language models manage context windows when processing long documents?,0.55,0.9166666666666666,0.5026374899886158,0.441013816410818,0.3666666666666666
+Describe the mechanism of action for mRNA vaccines in providing immunity against viruses.,0.55,1.0,0.4493135166389979,0.3851295277566578,0.44999999999999996
+What is 'retrieval brittleness' and how does it affect RAG system performance?,0.55,0.8333333333333334,0.49712723102387796,0.49504950495049505,0.2833333333333333
