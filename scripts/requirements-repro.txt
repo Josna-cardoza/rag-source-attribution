@@ -1,0 +1,24 @@
+# Reproducibility environment for the thesis RAG project
+# Pinning major dependencies that appear in the project notebook.
+
+numpy==1.26.4
+pandas==2.2.3
+matplotlib==3.10.1
+seaborn==0.13.2
+scikit-learn==1.6.1
+pyarrow==19.0.1
+python-dotenv==1.0.1
+tqdm==4.67.1
+jupyter==1.1.1
+notebook==7.3.2
+ipykernel==6.29.5
+
+# Model and retrieval stack
+sentence-transformers==3.4.1
+transformers==4.48.3
+torch==2.5.1
+pyserini==0.42.0
+
+# Google / Vertex AI stack
+google-cloud-aiplatform==1.82.0
+google-generativeai==0.8.4
