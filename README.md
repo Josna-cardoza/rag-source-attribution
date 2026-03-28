@@ -48,19 +48,23 @@ is trained to evaluate:
 
 ## Technical Stack
 
--   **Data:** ArXiv Metadata (Kaggle)
--   **Search Engine:** Pyserini / Lucene (BM25)
--   **LLM:** Google Gemini 2.5 Flash (Vertex AI)
--   **Reranker:** Sentence-Transformers (Cross-Encoders)
--   **Environment:** Python 3.10+, Java 21
+- **Data:** ArXiv Metadata (Kaggle)
+- **Search Engine:** Pyserini / Lucene (BM25)
+- **LLM:** Google Gemini 2.5 Flash (Vertex AI)
+- **Reranker:** Sentence-Transformers (Cross-Encoders)
+- **Environment:** Python 3.10+, Java 21
 
 ------------------------------------------------------------------------
 
 ## Repository Structure
 
-project-root/ notebooks/ main.ipynb data/ arxiv/ processed/ models/
-aar_trained_model/ results/ evaluation_queries.json
-final_evaluation_report.csv scripts/ Dockerfile requirements-repro.txt
+project-root/ 
+notebooks/ main.ipynb 
+data/ arxiv/ processed/ 
+models/ aar_trained_model/ 
+results/ evaluation_queries.json
+final_evaluation_report.csv 
+scripts/ Dockerfile requirements-repro.txt
 .env.example run_in_docker.sh run_reproducibility.ps1
 
 ------------------------------------------------------------------------
@@ -73,9 +77,10 @@ Create a `.env` file:
 
 KAGGLE_USERNAME=your_username\
 KAGGLE_KEY=your_key\
-GCP_PROJECT_ID=your_project\
-GCP_LOCATION=us-central1\
-GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
+JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-21.0.2.10-hotspot"\
+BASE_DIR="/workspace"\
+VERTEX_PROJECT_ID=your-gcp-project-id\
+VERTEX_LOCATION="global"
 
 ------------------------------------------------------------------------
 
@@ -111,7 +116,7 @@ Execute `notebooks/main.ipynb`:
 docker build -f scripts/Dockerfile -t thesis-rag-repro .
 
 docker run --rm -it -p 8888:8888 --env-file .env -v "\${PWD}:/workspace"
-thesis-rag-repro
+source-attribution-rag-repro
 
 Open: http://localhost:8888/lab
 
@@ -134,23 +139,3 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
     -   F1 Score
 
 Results stored in `/results`.
-
-------------------------------------------------------------------------
-
-## Best Practices
-
--   Use `.env` for configuration
--   Avoid hardcoded paths
--   Use Docker for thesis reproducibility
--   Include scripts/ folder in submission
-
-------------------------------------------------------------------------
-
-## Appendix (Thesis Integration)
-
-Include in your thesis Appendix:
-
--   GitHub repository link
--   Dataset sources
--   Evaluation queries (`evaluation_queries.json`)
--   Results (`final_evaluation_report.csv`)
