@@ -122,14 +122,6 @@ Open: http://localhost:8888/lab
 
 ------------------------------------------------------------------------
 
-### Option B --- PowerShell
-
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-
-.`\scripts`{=tex}`\run`{=tex}\_reproducibility.ps1 -LaunchJupyter
-
-------------------------------------------------------------------------
-
 ## Evaluation
 
 -   50+ domain-specific queries (ArXiv)
