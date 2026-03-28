@@ -15,9 +15,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /workspace
 
-COPY scripts/requirements-repro.txt /tmp/requirements-repro.txt
+COPY scripts/requirements.txt /tmp/requirements.txt
 RUN python -m pip install --upgrade pip setuptools wheel && \
-    pip install -r /tmp/requirements-repro.txt
+    pip install -r /tmp/requirements.txt
 
 COPY scripts/run_in_docker.sh /usr/local/bin/run_in_docker.sh
 RUN chmod +x /usr/local/bin/run_in_docker.sh

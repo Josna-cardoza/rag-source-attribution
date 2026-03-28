@@ -7,7 +7,7 @@ PORT="${JUPYTER_PORT:-8888}"
 
 cd "$PROJECT_ROOT"
 
-python -m ipykernel install --user --name thesis-repro --display-name "Python (thesis-repro)" >/dev/null 2>&1 || true
+python -m ipykernel install --user --name source-attribution --display-name "Python (source-attribution)" >/dev/null 2>&1 || true
 
 printf "\n[INFO] Project root: %s\n" "$PROJECT_ROOT"
 printf "[INFO] Notebook path: %s\n" "$NOTEBOOK_PATH"

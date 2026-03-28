@@ -1,55 +1,156 @@
 # RAG Source Attribution: Attribution-Aware Reranking (AAR)
 
-This repository focuses on improving the reliability and factual grounding of Retrieval-Augmented Generation (RAG) systems. The core innovation is an **Attribution-Aware Reranker (AAR)** trained to prioritize retrieved passages that provide strong, direct factual support for generated answers, thereby reducing hallucinations.
+This repository presents a **Retrieval-Augmented Generation (RAG)**
+system designed to improve **factual grounding and citation
+reliability** in Large Language Models (LLMs). The core contribution is
+an **Attribution-Aware Reranker (AAR)**, which prioritizes passages that
+*truly support claims*, reducing hallucinations and misleading
+citations.
+
+------------------------------------------------------------------------
 
 ## Project Overview
 
-Standard RAG pipelines often suffer from "retrieval brittleness," where relevant documents are retrieved but the model fails to attribute information correctly or hallucinates based on loosely related text. This project explores a multi-stage pipeline:
+Standard RAG pipelines suffer from **retrieval brittleness**, where
+retrieved documents are relevant but fail to properly support generated
+claims. This leads to hallucinations or weak attribution.
 
-1.  **Stage 1 Retrieval:** BM25 lexical search using Pyserini/Lucene.
-2.  **Stage 2 Reranking (Baseline):** Standard Cross-Encoder (e.g., MS-MARCO MiniLM) for semantic relevance.
-3.  **Stage 2 Reranking (AAR):** A custom-trained reranker focused on *attribution* rather than just *relevance*.
-4.  **Stage 3 Generation:** Answer generation using **Gemini 2.5 Flash** via Vertex AI.
+This project introduces a **multi-stage, attribution-focused RAG
+pipeline**:
+
+1.  **Stage 1 -- Retrieval**\
+    BM25 lexical search using Pyserini/Lucene.
+
+2.  **Stage 2 -- Reranking**
+
+    -   **Baseline:** Cross-Encoder (MS MARCO MiniLM)
+    -   **Proposed:** Attribution-Aware Reranker (AAR)
+
+3.  **Stage 3 -- Generation**\
+    Answer generation using **Gemini 2.5 Flash (Vertex AI)**
+
+4.  **(Optional Extension) Verification Layer**\
+    Designed to validate claim--citation alignment for improved
+    reliability.
+
+------------------------------------------------------------------------
+
+## Key Innovation: Attribution-Aware Reranker (AAR)
+
+Unlike traditional rerankers that optimize for *semantic relevance*, AAR
+is trained to evaluate:
+
+- **Attributable** -- Passage directly supports the claim\
+-️ **Extrapolatory** -- Related but insufficient support\
+- **Contradictory** -- Conflicts with the claim
+
+------------------------------------------------------------------------
 
 ## Technical Stack
 
-- **Data:** ArXiv Metadata Snapshot (Kaggle).
-- **Search Engine:** Pyserini / Lucene (BM25).
-- **LLM:** Google Gemini 2.5 Flash (Vertex AI SDK).
-- **Reranker Framework:** Sentence-Transformers / Cross-Encoders.
-- **Environment:** Python 3.10+, Java 21 (for Pyserini).
+-   **Data:** ArXiv Metadata (Kaggle)
+-   **Search Engine:** Pyserini / Lucene (BM25)
+-   **LLM:** Google Gemini 2.5 Flash (Vertex AI)
+-   **Reranker:** Sentence-Transformers (Cross-Encoders)
+-   **Environment:** Python 3.10+, Java 21
+
+------------------------------------------------------------------------
 
 ## Repository Structure
 
-- `notebooks/main.ipynb`: The primary pipeline covering data preparation, indexing, baseline evaluation, and AAR training.
-- `data/`: Raw ArXiv data, processed chunks (Parquet), and search indexes.
-- `models/`: Trained AAR model weights.
-- `results/`: Performance plots and evaluation reports.
+project-root/ notebooks/ main.ipynb data/ arxiv/ processed/ models/
+aar_trained_model/ results/ evaluation_queries.json
+final_evaluation_report.csv scripts/ Dockerfile requirements-repro.txt
+.env.example run_in_docker.sh run_reproducibility.ps1
+
+------------------------------------------------------------------------
 
 ## Setup & Execution
 
 ### 1. Environment Configuration
-Create a `.env` file with your credentials:
-```env
-KAGGLE_USERNAME=your_username
-KAGGLE_KEY=your_key
-```
 
-### 2. Dependencies
-Install required packages as listed in the notebook:
-```bash
-pip install kaggle google-generativeai nmslib faiss-cpu sentence-transformers datasets pyserini python-dotenv matplotlib seaborn
-```
+Create a `.env` file:
 
-### 3. ArXiv Data Acquisition
-Data is automatically downloaded and chunked within `main.ipynb` using the Kaggle API.
+KAGGLE_USERNAME=your_username\
+KAGGLE_KEY=your_key\
+GCP_PROJECT_ID=your_project\
+GCP_LOCATION=us-central1\
+GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
 
-### 4. Running the Pipeline
-Open `notebooks/main.ipynb` and execute the cells sequentially through the phases:
-- **Phase 1:** Data Preparation & Indexing.
-- **Phase 2:** Baseline RAG Pipeline & Evaluation.
-- **Phase 3:** AAR Synthetic Data Generation & Training.
-- **Phase 4:** Comparative Performance Analysis.
+------------------------------------------------------------------------
+
+### 2. Install Dependencies
+
+pip install kaggle google-generativeai nmslib faiss-cpu
+sentence-transformers datasets pyserini python-dotenv matplotlib seaborn
+
+------------------------------------------------------------------------
+
+### 3. Data Acquisition
+
+-   Dataset is automatically downloaded via Kaggle API
+-   Preprocessing handled in `main.ipynb`
+
+------------------------------------------------------------------------
+
+### 4. Run the Pipeline
+
+Execute `notebooks/main.ipynb`:
+
+-   Phase 1: Data Preparation & Indexing\
+-   Phase 2: Baseline RAG\
+-   Phase 3: AAR Training\
+-   Phase 4: Evaluation
+
+------------------------------------------------------------------------
+
+## Reproducibility Guide
+
+### Option A --- Docker
+
+docker build -f scripts/Dockerfile -t thesis-rag-repro .
+
+docker run --rm -it -p 8888:8888 --env-file .env -v "\${PWD}:/workspace"
+thesis-rag-repro
+
+Open: http://localhost:8888/lab
+
+------------------------------------------------------------------------
+
+### Option B --- PowerShell
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+.`\scripts`{=tex}`\run`{=tex}\_reproducibility.ps1 -LaunchJupyter
+
+------------------------------------------------------------------------
 
 ## Evaluation
-The system is evaluated against a set of 50+ specialized queries (physics, mathematics, computer science) to measure precision and attribution accuracy. Results and comparison plots are stored in the `/results` directory.
+
+-   50+ domain-specific queries (ArXiv)
+-   Metrics:
+    -   Citation Precision
+    -   Citation Recall
+    -   F1 Score
+
+Results stored in `/results`.
+
+------------------------------------------------------------------------
+
+## Best Practices
+
+-   Use `.env` for configuration
+-   Avoid hardcoded paths
+-   Use Docker for thesis reproducibility
+-   Include scripts/ folder in submission
+
+------------------------------------------------------------------------
+
+## Appendix (Thesis Integration)
+
+Include in your thesis Appendix:
+
+-   GitHub repository link
+-   Dataset sources
+-   Evaluation queries (`evaluation_queries.json`)
+-   Results (`final_evaluation_report.csv`)

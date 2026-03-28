@@ -13,7 +13,7 @@ function Write-Step($Message) {
 }
 
 $VenvPath = Join-Path $ProjectRoot $VenvName
-$RequirementsPath = Join-Path $ProjectRoot "scripts\requirements-repro.txt"
+$RequirementsPath = Join-Path $ProjectRoot "scripts\requirements.txt"
 $EnvExamplePath = Join-Path $ProjectRoot "scripts\.env.example"
 $EnvPath = Join-Path $ProjectRoot ".env"
 
