@@ -113,7 +113,7 @@ Execute `notebooks/main.ipynb`:
 
 ### Option A --- Docker
 
-docker build -f scripts/Dockerfile -t thesis-rag-repro .
+docker build -f scripts/Dockerfile -t source-attribution-rag-repro .
 
 docker run --rm -it -p 8888:8888 --env-file .env -v "\${PWD}:/workspace"
 source-attribution-rag-repro
