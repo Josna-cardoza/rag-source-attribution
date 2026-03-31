@@ -90,7 +90,6 @@ venv.bak/
 # Project Specific Data/Models/Results
 data/
 models/
-results/
 **/docs.jsonl
 **/bm25_index/
 **/arxiv_chunks.parquet
