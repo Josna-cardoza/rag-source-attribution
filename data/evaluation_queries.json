@@ -2,23 +2,23 @@
   "queries": [
     {
       "id": 1,
-      "query": "Explain how gluon-gluon subprocesses contribute to prompt diphoton production at LHC energies, and analyze how higher-order corrections improve agreement with experimental data.",
-      "hypothesis_type": "multi_hop_explanatory",
+      "query": "Describe the symmetry breaking phase transition observed in two-channel Kondo models as coupling strength increases.",
+      "hypothesis_type": "causal_analysis",
       "domain": "scientific",
       "difficulty": "hard",
       "performance_group": "better"
     },
     {
       "id": 2,
-      "query": "Compare the sensitivity of Higgs boson signal detection to QCD background processes in diphoton production, and explain how resummation techniques affect this comparison.",
-      "hypothesis_type": "comparative_reasoning",
+      "query": "Has the dark matter field fluid model for the Earth-Moon system been independently verified by astronomical data?",
+      "hypothesis_type": "evaluation_judgment",
       "domain": "scientific",
       "difficulty": "hard",
       "performance_group": "better"
     },
     {
       "id": 3,
-      "query": "Describe the symmetry breaking phase transition in two-channel Kondo models and explain how it differs from single-channel behavior at half-filling.",
+      "query": "Compare the sensitivity to Higgs boson signals versus QCD background processes in diphoton production.",
       "hypothesis_type": "comparative_reasoning",
       "domain": "scientific",
       "difficulty": "hard",
@@ -26,23 +26,23 @@
     },
     {
       "id": 4,
-      "query": "Analyze how the dark matter field fluid model explains the evolution of the Earth-Moon system, and evaluate whether astronomical observations independently support this model.",
-      "hypothesis_type": "evaluation_judgment",
+      "query": "What is the average dark matter field fluid constant derived from Earth-Moon system observations?",
+      "hypothesis_type": "factoid_lookup",
       "domain": "scientific",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 5,
-      "query": "Explain how the dyadic grid is used to compute norms in Hardy spaces, and discuss its implications for numerical accuracy in functional analysis.",
-      "hypothesis_type": "multi_hop_explanatory",
+      "query": "Identify the angular acceleration rate predicted for Mars's rotation slowing in the dark matter model.",
+      "hypothesis_type": "factoid_lookup",
       "domain": "scientific",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 6,
-      "query": "Discuss the relationship between Stirling cycle number determinants and unlabeled acyclic single-source automata, including the role of bijections in their proofs.",
+      "query": "Define -sparse graphs and explain how they are identified using colored pebbles.",
       "hypothesis_type": "multi_hop_explanatory",
       "domain": "scientific",
       "difficulty": "hard",
@@ -50,47 +50,47 @@
     },
     {
       "id": 7,
-      "query": "Explain the concept of sign-reversing involution in combinatorics and analyze how it is used in proving properties of marked lattice paths.",
-      "hypothesis_type": "methodological_process",
+      "query": "What is the significance of 'initial-state gluon radiation' in diphoton production cross-sections?",
+      "hypothesis_type": "evaluation_judgment",
       "domain": "scientific",
       "difficulty": "hard",
       "performance_group": "better"
     },
     {
       "id": 8,
-      "query": "Evaluate how attribution-aware reranking improves over relevance-based reranking, and explain its impact on retrieval brittleness in long-form RAG systems.",
-      "hypothesis_type": "evaluation_judgment",
-      "domain": "rag_thesis",
+      "query": "Explain the relationship between Hardy spaces and special atoms as described in the dyadic grid paper.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "scientific",
       "difficulty": "hard",
       "performance_group": "better"
     },
     {
       "id": 9,
-      "query": "Describe how the Corrective Verification Loop (CVL) identifies incorrect claim-citation pairs and explain how it iteratively improves retrieval quality.",
-      "hypothesis_type": "methodological_process",
-      "domain": "rag_thesis",
+      "query": "Describe the connection between pebble game algorithms and the work of Gabow and Westermann.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "scientific",
       "difficulty": "hard",
       "performance_group": "better"
     },
     {
       "id": 10,
-      "query": "Compare the roles of AGS and AttrScore in evaluating attribution quality, and explain why both are needed for long-form generation tasks.",
-      "hypothesis_type": "comparative_reasoning",
-      "domain": "rag_thesis",
+      "query": "What is the relationship between the dyadic grid and numerical analysis accuracy?",
+      "hypothesis_type": "causal_analysis",
+      "domain": "scientific",
       "difficulty": "hard",
       "performance_group": "better"
     },
     {
       "id": 11,
-      "query": "Analyze how retrieval brittleness affects multi-claim responses in RAG systems, and explain how your proposed framework mitigates this issue.",
-      "hypothesis_type": "causal_analysis",
-      "domain": "rag_thesis",
-      "difficulty": "hard",
+      "query": "What specific data from the Fermilab Tevatron was used to demonstrate agreement with the QCD calculations?",
+      "hypothesis_type": "factoid_lookup",
+      "domain": "scientific",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 12,
-      "query": "Explain how initial-state gluon radiation impacts diphoton cross-sections and evaluate its role in distinguishing Higgs signals from background noise.",
+      "query": "Explain the importance of 'next-to-next-to-leading logarithmic accuracy' in perturbative QCD.",
       "hypothesis_type": "evaluation_judgment",
       "domain": "scientific",
       "difficulty": "hard",
@@ -98,183 +98,183 @@
     },
     {
       "id": 13,
-      "query": "Discuss the implications of exact diagonalization methods for low-temperature lattice models and compare them with approximate numerical techniques.",
-      "hypothesis_type": "comparative_reasoning",
-      "domain": "scientific",
-      "difficulty": "hard",
+      "query": "Explain the socio-economic causes of urban sprawl in developing nations.",
+      "hypothesis_type": "causal_analysis",
+      "domain": "general",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 14,
-      "query": "Explain how sparse graphs are characterized using pebble game algorithms and analyze their relevance to rigidity theory.",
-      "hypothesis_type": "multi_hop_explanatory",
-      "domain": "scientific",
-      "difficulty": "hard",
+      "query": "What are the ethical implications of using CRISPR gene editing in human embryos?",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "general",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 15,
-      "query": "Compare the performance of pebble game algorithms with classical graph decomposition methods, highlighting their computational advantages.",
-      "hypothesis_type": "comparative_reasoning",
-      "domain": "scientific",
+      "query": "Summarize the key findings of a research paper regarding the impact of microplastics on marine food chains.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "general",
       "difficulty": "hard",
       "performance_group": "better"
     },
     {
       "id": 16,
-      "query": "Explain how the dark matter field fluid constant influences tidal friction calculations and assess its consistency with geological evidence.",
+      "query": "What was the impact of the Industrial Revolution on global carbon emission trends?",
       "hypothesis_type": "causal_analysis",
-      "domain": "scientific",
-      "difficulty": "hard",
+      "domain": "general",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 17,
-      "query": "Analyze how next-to-next-to-leading logarithmic (NNLL) accuracy improves perturbative QCD predictions and compare it with lower-order approximations.",
-      "hypothesis_type": "comparative_reasoning",
-      "domain": "scientific",
+      "query": "What is 'retrieval brittleness' and how does it affect RAG system performance?",
+      "hypothesis_type": "causal_analysis",
+      "domain": "rag_thesis",
       "difficulty": "hard",
       "performance_group": "better"
     },
     {
       "id": 18,
-      "query": "Discuss how Fermilab Tevatron data validates QCD predictions for diphoton production and explain any discrepancies observed.",
+      "query": "What is the closest distance the Moon reached from Earth according to the dark matter field fluid model 4.5 billion years ago?",
+      "hypothesis_type": "factoid_lookup",
+      "domain": "scientific",
+      "difficulty": "medium",
+      "performance_group": "better"
+    },
+    {
+      "id": 19,
+      "query": "How does the dyadic grid facilitate the computation of the norm in Hardy spaces?",
+      "hypothesis_type": "methodological_process",
+      "domain": "scientific",
+      "difficulty": "hard",
+      "performance_group": "better"
+    },
+    {
+      "id": 20,
+      "query": "Explain the methodology used to contrast diphoton pairs from Higgs decay with those from QCD processes.",
+      "hypothesis_type": "methodological_process",
+      "domain": "scientific",
+      "difficulty": "hard",
+      "performance_group": "better"
+    },
+    {
+      "id": 21,
+      "query": "How does the Stirling cycle number determinant relate to unlabeled acyclic single-source automata?",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "scientific",
+      "difficulty": "hard",
+      "performance_group": "better"
+    },
+    {
+      "id": 22,
+      "query": "How does the dark matter field fluid model align with geological and fossil evidence of the Earth-Moon system?",
       "hypothesis_type": "evaluation_judgment",
       "domain": "scientific",
       "difficulty": "hard",
       "performance_group": "better"
     },
     {
-      "id": 19,
-      "query": "Explain how quantum computing threatens traditional RSA encryption and evaluate potential mitigation strategies.",
-      "hypothesis_type": "evaluation_judgment",
-      "domain": "general",
-      "difficulty": "hard",
-      "performance_group": "better"
-    },
-    {
-      "id": 20,
-      "query": "Analyze how neural networks use backpropagation to minimize loss and discuss limitations in deep architectures.",
-      "hypothesis_type": "methodological_process",
-      "domain": "general",
-      "difficulty": "hard",
-      "performance_group": "better"
-    },
-    {
-      "id": 21,
-      "query": "Discuss the ethical implications of CRISPR gene editing and evaluate how regulatory frameworks address these concerns.",
-      "hypothesis_type": "evaluation_judgment",
-      "domain": "general",
-      "difficulty": "hard",
-      "performance_group": "better"
-    },
-    {
-      "id": 22,
-      "query": "Explain how ocean acidification affects coral reef ecosystems and analyze long-term ecological consequences.",
-      "hypothesis_type": "causal_analysis",
-      "domain": "general",
-      "difficulty": "hard",
-      "performance_group": "better"
-    },
-    {
       "id": 23,
-      "query": "Compare the socio-economic drivers of urban sprawl in developing nations and evaluate their environmental impact.",
-      "hypothesis_type": "comparative_reasoning",
-      "domain": "general",
-      "difficulty": "hard",
+      "query": "What are the implications of the exact diagonalization method for low-temperature calculations in lattice models?",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "scientific",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 24,
-      "query": "Analyze how large language models manage context windows and discuss trade-offs between memory and performance.",
-      "hypothesis_type": "evaluation_judgment",
-      "domain": "general",
+      "query": "Explain the 'sign-reversing involution' mentioned in the context of acyclic single-source automata.",
+      "hypothesis_type": "methodological_process",
+      "domain": "scientific",
       "difficulty": "hard",
       "performance_group": "better"
     },
     {
       "id": 25,
-      "query": "Explain the Transformer architecture and evaluate why self-attention is more effective than recurrent mechanisms.",
-      "hypothesis_type": "comparative_reasoning",
-      "domain": "general",
-      "difficulty": "hard",
+      "query": "What perturbative contributions are included in the NLO calculation for massive photon pairs?",
+      "hypothesis_type": "factoid_lookup",
+      "domain": "scientific",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 26,
-      "query": "Discuss how mRNA vaccines generate immune responses and compare them with traditional vaccine approaches.",
-      "hypothesis_type": "comparative_reasoning",
+      "query": "What is the primary contribution of the Transformer architecture to natural language processing?",
+      "hypothesis_type": "factoid_lookup",
       "domain": "general",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 27,
-      "query": "Analyze the limitations of solid-state battery technology and evaluate potential breakthroughs needed for scalability.",
-      "hypothesis_type": "evaluation_judgment",
+      "query": "How do large language models manage context windows when processing long documents?",
+      "hypothesis_type": "methodological_process",
       "domain": "general",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 28,
-      "query": "Explain how mitochondrial processes contribute to cellular respiration and analyze their role in metabolic regulation.",
-      "hypothesis_type": "multi_hop_explanatory",
+      "query": "Describe the effects of ocean acidification on coral reef biodiversity.",
+      "hypothesis_type": "causal_analysis",
       "domain": "general",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 29,
-      "query": "Compare the environmental impact of the Industrial Revolution with modern industrialization trends.",
-      "hypothesis_type": "comparative_reasoning",
-      "domain": "general",
-      "difficulty": "hard",
+      "query": "Explain the role of gluon-gluon subprocesses in prompt diphoton production.",
+      "hypothesis_type": "factoid_lookup",
+      "domain": "scientific",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 30,
-      "query": "Discuss how retrieval-augmented generation systems balance retrieval and generation, and analyze failure cases.",
-      "hypothesis_type": "evaluation_judgment",
-      "domain": "rag_thesis",
-      "difficulty": "hard",
+      "query": "Compare Higgs vs QCD background sensitivity.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "scientific",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 31,
-      "query": "Explain how attribution bias affects source selection in RAG systems and evaluate strategies to mitigate it.",
-      "hypothesis_type": "causal_analysis",
-      "domain": "rag_thesis",
+      "query": "What is the significance of all-orders resummation in diphoton calculations?",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "scientific",
       "difficulty": "hard",
       "performance_group": "better"
     },
     {
       "id": 32,
-      "query": "Analyze how long-context documents introduce challenges for attribution and discuss how LongCite-like approaches address them.",
-      "hypothesis_type": "methodological_process",
-      "domain": "rag_thesis",
-      "difficulty": "hard",
+      "query": "How does the Kondo lattice model behave at half-filling?",
+      "hypothesis_type": "causal_analysis",
+      "domain": "scientific",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 33,
-      "query": "Compare multi-agent RAG systems with single-pipeline approaches and evaluate trade-offs in complexity and performance.",
-      "hypothesis_type": "comparative_reasoning",
+      "query": "What is the role of attribution-aware reranking in RAG pipelines?",
+      "hypothesis_type": "methodological_process",
       "domain": "rag_thesis",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 34,
-      "query": "Explain how saliency-based attribution methods differ from citation-based approaches and evaluate their practical limitations.",
-      "hypothesis_type": "comparative_reasoning",
+      "query": "How does the CVL improve citation correctness?",
+      "hypothesis_type": "methodological_process",
       "domain": "rag_thesis",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 35,
-      "query": "Discuss how evaluation metrics like precision and recall may fail to capture attribution quality and propose improvements.",
+      "query": "What are AGS implications in long-form attribution?",
       "hypothesis_type": "evaluation_judgment",
       "domain": "rag_thesis",
       "difficulty": "hard",
@@ -282,7 +282,7 @@
     },
     {
       "id": 36,
-      "query": "Analyze how hallucinations arise in LLMs even with retrieval and explain why verification layers are necessary.",
+      "query": "How does retrieval brittleness affect long-form QA?",
       "hypothesis_type": "causal_analysis",
       "domain": "rag_thesis",
       "difficulty": "hard",
@@ -290,34 +290,34 @@
     },
     {
       "id": 37,
-      "query": "Explain how chain-of-thought reasoning improves attribution accuracy and discuss its computational trade-offs.",
-      "hypothesis_type": "evaluation_judgment",
+      "query": "What improvements does AAR provide over relevance reranking?",
+      "hypothesis_type": "comparative_reasoning",
       "domain": "rag_thesis",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 38,
-      "query": "Compare different reranking strategies in RAG pipelines and evaluate their effectiveness in long-form QA tasks.",
-      "hypothesis_type": "comparative_reasoning",
+      "query": "How does verification improve claim–citation alignment?",
+      "hypothesis_type": "causal_analysis",
       "domain": "rag_thesis",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 39,
-      "query": "Discuss how dataset characteristics (ArXiv vs BookSum) influence attribution performance in RAG systems.",
-      "hypothesis_type": "comparative_reasoning",
-      "domain": "rag_thesis",
-      "difficulty": "hard",
+      "query": "What evidence is used to demonstrate that kinetic models explain biodiversity?",
+      "hypothesis_type": "factoid_lookup",
+      "domain": "scientific",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
       "id": 40,
-      "query": "Analyze how your proposed framework improves claim-level attribution compared to baseline retrieve-and-rerank systems.",
-      "hypothesis_type": "evaluation_judgment",
-      "domain": "rag_thesis",
-      "difficulty": "hard",
+      "query": "Explain the relationship between Hardy spaces and special atoms.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "scientific",
+      "difficulty": "medium",
       "performance_group": "better"
     },
     {
@@ -399,6 +399,356 @@
       "domain": "general",
       "difficulty": "medium",
       "performance_group": "worse"
+    },
+    {
+      "id": 51,
+      "query": "Compare attribution-aware reranking with standard cross-encoder reranking in terms of citation precision and robustness to retrieval errors.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 52,
+      "query": "Compare multi-hop retrieval strategies with single-pass retrieval approaches in handling complex question answering tasks.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 53,
+      "query": "Compare the effectiveness of AGS and traditional precision metrics in evaluating attribution quality in long-form responses.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 54,
+      "query": "Compare causal reasoning queries with factoid queries in terms of their susceptibility to retrieval brittleness in RAG systems.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 55,
+      "query": "Compare verification-based pipelines with standard generation pipelines in reducing hallucinations in large language models.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 56,
+      "query": "Compare BM25-based retrieval with dense vector retrieval methods in terms of recall and semantic relevance.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "rag_thesis",
+      "difficulty": "medium"
+    },
+    {
+      "id": 57,
+      "query": "Compare the performance of transformer-based models with recurrent neural networks in handling long-context dependencies.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 58,
+      "query": "Compare classical graph algorithms with pebble game algorithms in identifying sparse graph structures.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "scientific",
+      "difficulty": "medium"
+    },
+    {
+      "id": 59,
+      "query": "Compare the Higgs boson signal extraction methods with background suppression techniques in particle physics experiments.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "scientific",
+      "difficulty": "hard"
+    },
+    {
+      "id": 60,
+      "query": "Compare exact diagonalization methods with Monte Carlo simulations for studying quantum lattice systems.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "scientific",
+      "difficulty": "hard"
+    },
+    {
+      "id": 61,
+      "query": "Compare ocean acidification effects with global warming impacts on marine ecosystems.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 62,
+      "query": "Compare CRISPR gene editing with traditional genetic modification techniques in terms of precision and ethical concerns.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 63,
+      "query": "Compare the impact of industrialization in the 19th century with modern technological expansion on environmental sustainability.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 64,
+      "query": "Compare chain-of-thought prompting with direct answer generation in improving reasoning accuracy in LLMs.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 65,
+      "query": "Compare attribution granularity in short-form versus long-form generated responses.",
+      "hypothesis_type": "comparative_reasoning",
+      "domain": "rag_thesis",
+      "difficulty": "medium"
+    },
+    {
+      "id": 66,
+      "query": "Evaluate the effectiveness of attribution-aware reranking in reducing misleading citations compared to relevance-based ranking approaches.",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 67,
+      "query": "Evaluate how the Corrective Verification Loop impacts overall system reliability in long-form question answering tasks.",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 68,
+      "query": "Evaluate the limitations of retrieval-based grounding when applied to multi-claim scientific documents.",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 69,
+      "query": "Evaluate how attribution granularity affects user trust and interpretability in AI-generated responses.",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 70,
+      "query": "Evaluate the trade-offs between retrieval precision and recall in the context of claim-level attribution.",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 71,
+      "query": "Evaluate the impact of hallucination mitigation techniques on the usability of LLM-based systems.",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 72,
+      "query": "Evaluate the effectiveness of CRISPR gene editing technologies in addressing inherited genetic disorders.",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 73,
+      "query": "Evaluate the environmental impact of large-scale industrialization on climate change trends.",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 74,
+      "query": "Evaluate the significance of next-to-leading order corrections in improving theoretical predictions in particle physics.",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "scientific",
+      "difficulty": "hard"
+    },
+    {
+      "id": 75,
+      "query": "Evaluate the reliability of astronomical models in predicting long-term planetary motion.",
+      "hypothesis_type": "evaluation_judgment",
+      "domain": "scientific",
+      "difficulty": "hard"
+    },
+    {
+      "id": 76,
+      "query": "Explain the step-by-step process of attribution-aware reranking from initial retrieval to final passage selection.",
+      "hypothesis_type": "methodological_process",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 77,
+      "query": "Describe how the Corrective Verification Loop identifies, evaluates, and corrects incorrect claim–citation pairs.",
+      "hypothesis_type": "methodological_process",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 78,
+      "query": "Explain the pipeline of a standard RAG system and highlight where attribution errors typically occur.",
+      "hypothesis_type": "methodological_process",
+      "domain": "rag_thesis",
+      "difficulty": "medium"
+    },
+    {
+      "id": 79,
+      "query": "Describe the process of training a cross-encoder model for passage reranking using NLI-style objectives.",
+      "hypothesis_type": "methodological_process",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 80,
+      "query": "Explain how claim–citation extraction is performed in long-form generated responses.",
+      "hypothesis_type": "methodological_process",
+      "domain": "rag_thesis",
+      "difficulty": "medium"
+    },
+    {
+      "id": 81,
+      "query": "Describe the process of backpropagation in neural networks and how it enables model learning.",
+      "hypothesis_type": "methodological_process",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 82,
+      "query": "Explain the mechanism of mRNA vaccines from injection to immune response activation.",
+      "hypothesis_type": "methodological_process",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 83,
+      "query": "Describe how transformer models process input sequences using self-attention mechanisms.",
+      "hypothesis_type": "methodological_process",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 84,
+      "query": "Explain how BM25 retrieves candidate documents and how it differs from neural retrieval methods.",
+      "hypothesis_type": "methodological_process",
+      "domain": "rag_thesis",
+      "difficulty": "medium"
+    },
+    {
+      "id": 85,
+      "query": "Describe the process of evaluating attribution quality using precision, recall, and AGS metrics.",
+      "hypothesis_type": "methodological_process",
+      "domain": "rag_thesis",
+      "difficulty": "medium"
+    },
+    {
+      "id": 86,
+      "query": "Explain how retrieval brittleness emerges in RAG systems and how it propagates through the generation stage.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 87,
+      "query": "Explain how attribution-aware reranking and verification together improve claim-level grounding in long-form outputs.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 88,
+      "query": "Explain how multiple supporting passages are combined to generate a coherent answer in RAG systems.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "rag_thesis",
+      "difficulty": "medium"
+    },
+    {
+      "id": 89,
+      "query": "Explain how ocean acidification interacts with rising temperatures to affect marine biodiversity.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 90,
+      "query": "Explain how industrial emissions contribute to both global warming and ocean acidification.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 91,
+      "query": "Explain how quantum computing principles challenge classical cryptographic systems like RSA.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "general",
+      "difficulty": "medium"
+    },
+    {
+      "id": 92,
+      "query": "Explain how Higgs boson detection relies on distinguishing signal from background noise in particle experiments.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "scientific",
+      "difficulty": "hard"
+    },
+    {
+      "id": 93,
+      "query": "Explain how perturbative QCD calculations are used to model diphoton production processes.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "scientific",
+      "difficulty": "hard"
+    },
+    {
+      "id": 94,
+      "query": "Explain how sparse graph structures relate to rigidity theory and constraint satisfaction problems.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "scientific",
+      "difficulty": "hard"
+    },
+    {
+      "id": 95,
+      "query": "Explain how Hardy spaces and dyadic grids are used together in functional analysis.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "scientific",
+      "difficulty": "hard"
+    },
+    {
+      "id": 96,
+      "query": "Explain how attribution bias influences passage selection in retrieval-augmented generation systems.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 97,
+      "query": "Explain how long-context documents introduce challenges for citation granularity and evidence alignment.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 98,
+      "query": "Explain how multi-agent RAG systems coordinate retrieval, reasoning, and verification processes.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 99,
+      "query": "Explain how evaluation metrics like precision and recall interact with AGS in measuring attribution quality.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
+    },
+    {
+      "id": 100,
+      "query": "Explain how your proposed AAR + CVL framework improves attribution compared to baseline RAG systems across different query types.",
+      "hypothesis_type": "multi_hop_explanatory",
+      "domain": "rag_thesis",
+      "difficulty": "hard"
     }
   ]
 }
